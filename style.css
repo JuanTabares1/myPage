@@ -1,0 +1,284 @@
+/*font-family: 'robotomono', monospace;
+font-family: 'Inconsolata', monospace;*/
+
+/*NOMRALIZACION: */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inconsolata', monospace;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    background-color: black; /*TEMPORAL*/
+}
+
+header {
+    position: fixed; /*Para que el header se quede fijo en la parte superior*/
+    right: 0;
+    top: 0;
+    z-index: 100; /*Hace que el header se muestre por encima*/
+    width: 100%;
+    display: flex; /*Esto hara que los elementos se pongan en linea*/
+    align-items: center; /*Centra verticalmente*/
+    justify-content: space-between; /*  Que los elementos se separen*/
+    padding: 15px 3%;
+    background-color: transparent;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 800; /*Grosor de las letras*/
+}
+
+.navlist {
+    display: flex; /*Para que los elementos de la lista ul se pongan en linea*/
+}
+
+.navlist a {
+    margin-left: 60px; /* Es para separar las palabras*/
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent; /*Subrayado transparente*/
+    transition: all .5s ease; /*esto es para animar todas las transiciones del .navlist a*/
+}
+
+.navlist a:hover {
+    border-bottom: 2px solid white;
+}
+
+#menu-icon {
+    display: none;
+}
+
+#menu-icon {
+    font-size: 35px;
+    z-index: 101;
+    cursor: pointer;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon-action {
+    display: none;
+}
+
+.hero {
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(245.59deg, #31494e 0%, #385e70 25%, #131313 75%); /*fondo de color gradiente*/
+    position: relative; /*Para que sea relativo al contenedor*/
+    display: grid; /*Para que el hero se divida en 2 columnas*/
+    grid-template-columns: 1fr 1fr; /*Las dos columnas*/
+    align-items: center; /*Alinear verticalmente las columnas*/
+    gap: 2rem;
+}
+
+section {
+    padding: 0 8%;
+}
+
+.hero-text h5 {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.hero-text h1 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 50px;
+    line-height: 1;
+    margin: 0 0 20px;
+}
+
+.hero-text h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.hero-text p {
+    font-size: 80%;
+    margin-bottom: 40px;
+    line-height: 1.9;
+}
+
+.hero-img img {
+    width: 400px;
+    border-radius: 50%;
+    margin: 10% 0 0;
+    height: auto;
+    transition: all .4s linear;
+}
+
+.hero-img img:hover {
+    width: 450px;
+    opacity: 0.8;
+}
+
+.hero-text a {
+    display: inline-block;
+    background-color: #4d4d4d;
+    border: 1px solid transparent;
+    padding: 15px 30px;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 40px;
+    text-transform: uppercase;
+    transition: all .5s ease;
+}
+
+.hero-text a:hover {
+    background-color: transparent;
+    border: 1px solid white;
+    transform: translateX(8px);
+}
+
+.hero-text a.repo {
+    background-color: transparent;
+    border: 1px solid white;
+    margin-left: 20px;
+}
+
+.hero-text a.repo:hover {
+    background-color: #4d4d4d;
+    border: 1px solid transparent;
+}
+
+.hero-text a.repo i{
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.icons {
+    position: absolute;
+    top: 50vh;
+    padding: 0 3%;
+    transform: translateY(-50%);
+}
+
+.icons i {
+    display: block;
+    margin: 26px 0;
+    font-size: 24px;
+    transition: all .5s ease;
+}
+
+.icons i:hover {
+    transform: translateY(-5%);
+}
+
+.icons i.ri-instagram-line:hover {
+    background: linear-gradient(245.59deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.icons i.ri-linkedin-fill:hover {
+    color: rgb(39, 63, 199);
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 6%;
+    right: 3%;
+}
+
+.scroll-down i {
+    display: block;
+    padding: 12px;
+    font-size: 25px;
+    background-color: #21383d;
+    border-radius: 50%;
+    transition: all .5s ease;
+}
+
+.scroll-down i:hover {
+    transform: translateY(-5px);
+}
+
+/* MEDIA QUERIES*/
+
+@media (max-width: 992px) {
+    section {
+        padding: 0 3%;
+        transition: .2s;
+    }
+
+    .icons {
+        display: none;
+    }
+
+    .scroll-down {
+        display: none;
+    }
+
+    .hero-text {
+        padding-top: 0;
+    }
+
+    .hero-img {
+        text-align: center;
+    }
+
+    .hero-img img {
+        width: 80%;
+        margin: 10% 0 0 10%;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-icon-action {
+        display: block;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    .hero-text {
+        text-align: center;
+        padding-top: 100px;
+    }
+
+    .hero-img img {
+        margin: 0;
+    }
+
+    .hero {
+        height: 100%;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+
+    .navlist {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 200px;
+        height: 180px;
+        border-radius: 10px;
+        background-color: #041822ef;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 20px;
+        transition: all .7s ease;
+    }
+
+    .navlist a {
+        display: block;
+        margin: 7px 0;
+    }
+
+    #menu-toggle:checked + label.menu-icon-action + ul {
+        right: 0;
+    }
+}
