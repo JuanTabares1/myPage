@@ -18,7 +18,7 @@
 <body>
 
 <header>
-    <a href="#" class="logo"> Juan CODE </a>
+    <a href="#inicio" class="logo"> Juan CODE </a>
 
     <input type="checkbox" name="checkbox" id="menu-toggle">
     <label for="menu-toggle" class="menu-icon-action">
@@ -26,19 +26,19 @@
     </label>
 
     <ul class="navlist">
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Sobre mi</a></li>
-        <li><a href="#">Portafolio</a></li>
-        <li><a href="#">Contacto</a></li>     
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#about">Sobre mi</a></li>
+        <li><a href="#portfolio">Portafolio</a></li>
+        <li><a href="#contact">Contacto</a></li>     
     </ul>
 </header>
 
     <!--HERO SECTION-->
-    <section class="hero">
+    <section class="hero" id="inicio">
         <div class="hero-text">
             <h5>Web Developer</h5>
             <h4>Node.js</h4>
-            <h1>Juan Jose Tabares</h1>
+            <h1>Juan José Tabares</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque repellat
             , in culpa ipsam, error aperiam nemo facere eaque odio quod deleniti</p>
             <a href="#"><i class="ri-file-line"></i>CV</a>
@@ -50,14 +50,36 @@
         </div>
     </section>
 
+    <!-- ABOUT ME SECTION -->
+<section id="about" class="about-me">
+    <h2>Sobre mí</h2>
+    <p>Hola, soy Juan José Tabares, un desarrollador web apasionado por la creación de soluciones digitales innovadoras. Con experiencia en Node.js y otros lenguajes de programación, me especializo en el desarrollo backend y la creación de aplicaciones web eficientes.</p>
+    <p>Además de programar, disfruto del diseño de interfaces de usuario que sean intuitivas y atractivas. Siempre estoy en búsqueda de nuevas tecnologías y formas de mejorar mis habilidades.</p>
+</section>
+
+    <!-- PORTFOLIO SECTION -->
+<section id="portfolio" class="portfolio">
+    <h2>Portafolio</h2>
+    <p>Estos son algunos de mis trabajos recientes.</p>
+    <!-- Aquí irían tus trabajos -->
+</section>
+
+    <!-- CONTACT SECTION -->
+<section id="contact" class="contact">
+    <h2>Contacto</h2>
+    <p>Si deseas contactarme, por favor envíame un mensaje.</p>
+</section>
+
     <div class="icons">
         <a href="https://www.instagram.com/jtabares.0/"><i class="ri-instagram-line"></i></a>
         <a href="www.linkedin.com/in/juan-jose-tabares-triviño-750458267"><i class="ri-linkedin-fill"></i></a>
     </div>
 
     <div class="scroll-down">
-        <a href="#"><i class="ri-arrow-down-s-fill"></i></a>
+        <a href="#about"><i class="ri-arrow-down-s-fill"></i></a>
     </div>
 
+
+    <script src="script.js"></script>
 </body>
 </html>

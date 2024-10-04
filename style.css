@@ -204,6 +204,25 @@ section {
     transform: translateY(-5px);
 }
 
+.about-me {
+    padding: 100px 8%;
+    background-color: #131313;
+    color: white;
+    text-align: center;
+}
+
+.about-me h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-me p {
+    font-size: 16px;
+    line-height: 1.7;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 /* MEDIA QUERIES*/
 
 @media (max-width: 992px) {
