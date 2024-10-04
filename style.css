@@ -12,10 +12,6 @@ font-family: 'Inconsolata', monospace;*/
     color: white;
 }
 
-body {
-    background-color: black; /*TEMPORAL*/
-}
-
 header {
     position: fixed; /*Para que el header se quede fijo en la parte superior*/
     right: 0;
@@ -206,7 +202,7 @@ section {
 
 .about-me {
     padding: 100px 8%;
-    background-color: #131313;
+    background: black;
     color: white;
     text-align: center;
 }
