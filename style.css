@@ -223,6 +223,162 @@ section {
     margin: 0 auto;
 }
 
+.scroll-down {
+    position: absolute;
+    bottom: 6%;
+    right: 3%;
+}
+
+.scroll-down i {
+    display: block;
+    padding: 12px;
+    font-size: 25px;
+    background-color: #21383d;
+    border-radius: 50%;
+    transition: all .5s ease;
+}
+
+.scroll-down i:hover {
+    transform: translateY(-5px);
+}
+
+.portfolio {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #f5f5f5; /* Color de fondo claro */
+}
+
+.portfolio h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.portfolio p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+/* Configuración de la cuadrícula de portafolio */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ajuste responsivo */
+    gap: 20px;
+    padding: 0 5%;
+}
+
+.portfolio-item {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+}
+
+.portfolio-info {
+    padding: 20px;
+}
+
+.portfolio-info h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.portfolio-info p {
+    font-size: 16px;
+    color: #666;
+}
+
+.contact {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #131313; /* Fondo oscuro */
+    color: white;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.contact p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #bbb;
+}
+
+/* Estilo del formulario */
+.contact-form {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form form {
+    width: 100%;
+    max-width: 600px;
+    background-color: #1e1e1e;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #ddd;
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: #333;
+    border: 1px solid #444;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #777;
+}
+
+.btn-submit {
+    padding: 15px 30px;
+    background-color: #4d4d4d;
+    border: none;
+    border-radius: 40px;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.btn-submit:hover {
+    background-color: #888;
+}
+
 /* MEDIA QUERIES*/
 
 @media (max-width: 992px) {
