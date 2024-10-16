@@ -202,7 +202,7 @@ section {
 
 .about-me {
     padding: 100px 8%;
-    background: black;
+    background: linear-gradient(245.59deg, #31494e -25%, #385e70 7%, #131313 62%);
     color: white;
     text-align: center;
 }
@@ -241,19 +241,19 @@ section {
 .portfolio {
     padding: 60px 0;
     text-align: center;
-    background-color: #f5f5f5; /* Color de fondo claro */
+    background: linear-gradient(245.59deg, #31494e -25%, #385e70 -5%, #131313 50%);
 }
 
 .portfolio h2 {
     font-size: 36px;
     margin-bottom: 20px;
-    color: #333;
+    color: white;
 }
 
 .portfolio p {
     font-size: 18px;
     margin-bottom: 40px;
-    color: #555;
+    color: white;
 }
 
 /* Configuración de la cuadrícula de portafolio */
