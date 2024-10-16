@@ -299,6 +299,11 @@ section {
 
 .portfolio-button {
     color: black;
+    transition: all .5s ease;
+}
+
+.portfolio-button:hover {
+    border-bottom: solid 2px #131313;
 }
 
 .contact {
