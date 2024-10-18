@@ -15,3 +15,16 @@ scrollDownBtn.addEventListener('click', (e) => {
         sections[currentSectionIndex + 1].scrollIntoView({ behavior: 'smooth' });
     }
 });
+
+const menuToggle = document.getElementById('menu-toggle');
+const navList = document.querySelector('.navlist');
+
+navList.addEventListener('click', (e) => {
+    if (e.target.tagName === 'A') {
+        menuToggle.checked = false;
+    }
+});
+
+window.addEventListener('scroll', () => {
+    menuToggle.checked = false;
+});
