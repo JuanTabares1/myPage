@@ -297,12 +297,15 @@ section {
 }
 
 .portfolio-button {
+    padding: 4px;
+    border: solid 1px black;
     color: black;
-    transition: all .5s ease;
+    transition: all .1s ease;
 }
 
 .portfolio-button:hover {
-    border-bottom: solid 2px #131313;
+    background-color: black;
+    color: white;
 }
 
 /*Contact section*/
