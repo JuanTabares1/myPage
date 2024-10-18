@@ -114,7 +114,6 @@ section {
 }
 
 .hero-img img:hover {
-    width: 450px;
     opacity: 0.8;
 }
 
